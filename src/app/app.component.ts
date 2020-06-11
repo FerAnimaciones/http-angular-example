@@ -18,6 +18,7 @@ export class AppComponent {
   constructor(
     private api: BackendApiService,
   ) {
+    //http://dummy.restapiexample.com/ <-- api usada.
     this.api.getData("employees")
     .subscribe(
       response => {
